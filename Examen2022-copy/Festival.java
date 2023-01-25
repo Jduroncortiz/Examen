@@ -1,18 +1,25 @@
+import java.util.ArrayList;
+
 public class Festival
 {
     // instance variables - replace the example below with your own
-    private int[] currentVisitorsPerAct = new int[1];
-
+    //private int[] currentVisitorsPerAct = new int[1];
+    private static int[] currentVisitorsPerAct;
+    private static int[][] currentVisitorsPerAct2;
+    private ArrayList<Ticket> ticketList = new ArrayList();
+    
     public Festival(int nrOfActs){
-        int[] newArray = new int[nrOfActs];
+        currentVisitorsPerAct = new int[nrOfActs];
+        currentVisitorsPerAct2 = new int[nrOfActs][2];
+        //int[] newArray = new int[nrOfActs];
         // initialise instance variables
-        for(int i = 0; i < nrOfActs; i++){
+        /*for(int i = 0; i < nrOfActs; i++){
             System.out.println(i);
             newArray[i] = 0;
-            System.out.println(newArray[i]);
-        }
+            System.out.println(currentVisitorsPerAct[i]);
+        }*/
         
-        currentVisitorsPerAct = newArray;
+        //currentVisitorsPerAct = newArray;
     }
 
     public int nrOfTickets(){
@@ -31,7 +38,14 @@ public class Festival
         System.out.println(currentVisitorsPerAct);
         return currentVisitorsPerAct;}
     
-    public boolean addTicket(Ticket ticket){return false;}
+    public boolean addTicket(Ticket ticket){
+        try{
+            ticketList.add(ticket);
+            return true;
+        }catch(Exception e){
+            return false;   
+        }
+    }
     
     public float removeTicket(Ticket ticket){return 1f;}
     
