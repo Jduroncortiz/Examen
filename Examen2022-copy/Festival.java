@@ -1,34 +1,20 @@
-
-/**
- * Write a description of class Festival here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class Festival
 {
     // instance variables - replace the example below with your own
-    private int[] currentVisitorsPerAct;
+    private int[] currentVisitorsPerAct = new int[1];
 
-    /**
-     * Constructor for objects of class Festival
-     */
     public Festival(int nrOfActs){
-        int[] currentVisitorsPerAct = new int[nrOfActs];
+        int[] newArray = new int[nrOfActs];
         // initialise instance variables
         for(int i = 0; i < nrOfActs; i++){
             System.out.println(i);
-            currentVisitorsPerAct[i] = 0;
-            System.out.println(currentVisitorsPerAct[i]);
+            newArray[i] = 0;
+            System.out.println(newArray[i]);
         }
+        
+        currentVisitorsPerAct = newArray;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
     public int nrOfTickets(){
         int outputNumber = 0;
         for(int i = 0; i < currentVisitorsPerAct.length; i++){
