@@ -16,4 +16,6 @@ comment7.params=
 comment7.target=int\ mostPopular()
 comment8.params=date
 comment8.target=boolean\ doWeHaveABirthday(java.lang.String)
-numComments=9
+comment9.params=filename
+comment9.target=java.util.ArrayList\ importBackup(java.lang.String)
+numComments=10

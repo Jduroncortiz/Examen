@@ -53,7 +53,10 @@ public class Festival
     
     public boolean doWeHaveABirthday(String date){return false;}
     
-    //public ArrayList<Ticket> importBackup(String filename){}
+    public ArrayList<Ticket> importBackup(String filename){
+        ArrayList<Ticket> listOfTickets = new ArrayList();
+        return listOfTickets;
+    }
     
     
     

@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=VIPTicket
+comment1.params=visitorName\ visitorNumber\ wantToMeetAndGreet
+comment1.target=VIPTicket(java.lang.String,\ java.lang.String,\ boolean)
+numComments=2

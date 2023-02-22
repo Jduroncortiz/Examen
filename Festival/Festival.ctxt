@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Festival
+comment1.params=nrOfActs
+comment1.target=Festival(int)
+comment2.params=
+comment2.target=int\ nrOfTickets()
+comment3.params=
+comment3.target=int[]\ getCurrentVisitorsPerAct()
+comment4.params=t
+comment4.target=boolean\ addTicket(Ticket)
+comment5.params=t
+comment5.target=float\ removeTicket(Ticket)
+comment6.params=
+comment6.target=int\ mostPopularAct()
+comment7.params=date
+comment7.target=boolean\ doWeHaveABirthday(java.lang.String)
+comment8.params=fileName
+comment8.target=java.util.ArrayList\ importBackup(java.lang.String)
+numComments=9

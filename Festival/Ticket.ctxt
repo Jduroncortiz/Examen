@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Ticket
+comment1.params=v\ n
+comment1.target=Ticket(java.lang.String,\ java.lang.String)
+comment2.params=n
+comment2.target=boolean\ addAct(int)
+comment3.params=
+comment3.target=void\ calculatePrice()
+comment4.params=
+comment4.target=int[]\ getActs()
+comment5.params=
+comment5.target=void\ setComplete()
+comment6.params=
+comment6.target=java.lang.String\ getName()
+comment7.params=
+comment7.target=boolean\ getComplete()
+comment8.params=
+comment8.target=int\ getActCounter()
+comment9.params=
+comment9.target=float\ getPrice()
+numComments=10

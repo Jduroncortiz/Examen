@@ -1,6 +1,6 @@
 public class Ticket
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private int[] acts;
     private float price = 0;
     private String name;
@@ -13,6 +13,9 @@ public class Ticket
     {
         name = visitorName;
         nationalNumber = visitorNatNumber;
+        actCounter = 0;
+        complete = false;
+        price = 0;
     }
     
     public boolean addAct(int actNr){// throws Exception{
@@ -44,6 +47,12 @@ public class Ticket
         }
     }
     
+    public boolean addAct(int actID){
+        if(acts.length == null){
+            
+        }
+    }
+    
     public void calculatePrice(){
         if(acts.length == 0){
             price = 0;
@@ -60,6 +69,10 @@ public class Ticket
     
     public int[] getActs(){return acts;}
     
+    public int getNrOfActs(){
+        return actCounter;    
+    }
+    
     public void setComplete(){}
     
     public boolean getComplete(){return complete;}
@@ -75,6 +88,7 @@ public class Ticket
     public String getName(){return name;}
     
     public String getNatNumber(){return nationalNumber;}
+    
     
     
 
